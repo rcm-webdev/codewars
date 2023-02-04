@@ -20,4 +20,20 @@
 
 //My Solution
 
+function eachCons(array, n) {
+  return Array.from({ length: array.length - n + 1 }, (_, i) =>
+    array.slice(i, i + n)
+  );
+}
+
 //Best Practices
+
+function eachCons(array, n) {
+  let res = [];
+
+  for (let i = 0; i < array.length; i++) {
+    res.push(array.slice(i, i + n));
+  }
+
+  return res.filter((e) => e.length === n);
+}
