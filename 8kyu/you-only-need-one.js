@@ -24,3 +24,6 @@ function check(a, x) {
 
 //Best Practices
 const check = (a,x) => a.includes(x);
+
+
+//Best practices made above
