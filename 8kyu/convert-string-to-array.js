@@ -27,6 +27,6 @@ function stringToArray(string){
 
 //Best Practices
   
-function countSheeps(arrayOfSheeps) {
-    return arrayOfSheeps.filter(Boolean).length;
+function stringToArray(string){
+    return string.split(' ');
   }
