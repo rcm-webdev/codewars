@@ -21,12 +21,7 @@ function removeExclamationMarks(s) {
 //-------------------------------------------------------------------------------------------------------------------------
 
 //Best Practices
-function reverseWords(str) {
-  c;
-  return str
-    .split(" ")
-    .map(function (word) {
-      return word.split("").reverse().join("");
-    })
-    .join(" ");
+
+function removeExclamationMarks(s) {
+  return s.split("!").join("");
 }
