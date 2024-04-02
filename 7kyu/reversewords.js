@@ -37,6 +37,7 @@ function reverseWords(str) {
 
 //Best Practices
 function reverseWords(str) {
+  c;
   return str
     .split(" ")
     .map(function (word) {
