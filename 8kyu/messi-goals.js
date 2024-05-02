@@ -1,6 +1,6 @@
-//Name: Logical Calculator
+//Name: Messi Goals
 //Difficulty: 8kyu
-//Tags: Fundamentals, Array
+//Tags: Fundamentals
 
 //-------------------------------------------------------------------------------------------------------------------------
 //Description
