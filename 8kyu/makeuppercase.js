@@ -46,6 +46,4 @@ function makeUpperCase(str) {
 
 //Best Practices
 
-function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
-  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
-}
+//same as above
