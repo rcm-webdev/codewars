@@ -30,6 +30,11 @@ function greet(name, owner) {
   }
 }
 
+//refactored code with ternary operator
+function greet(name, owner) {
+  return name !== owner ? "Hello guest" : "Hello boss";
+}
+
 //-------------------------------------------------------------------------------------------------------------------------
 
 //Best Practices
