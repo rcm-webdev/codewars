@@ -19,19 +19,23 @@
 
 //My Solution w/ PREP
 
-//parameters: numbers
-//results: boolean (can you or can you not make it to a gas station)
-//example zeroFuel = (100, 25, 1) //false
+//parameters: all valid and a number
+//results: the sum of digits in input
+//example: sumDigits(12) //3
 //pseudocode
 
-const zeroFuel1 = (distanceToPump, mpg, fuelLeft) => {
-  return mpg * fuelLeft >= distanceToPump ? true : false;
-};
+function sumDigits(number) {
+  let numToString = Math.abs(number)
+    .toString()
+    .split("")
+    .map(Number)
+    .reduce((a, b) => a + b);
+
+  return numToString;
+}
 
 //-------------------------------------------------------------------------------------------------------------------------
 
 //Best Practices
 
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-  return distanceToPump / mpg <= fuelLeft;
-};
+//same as above
