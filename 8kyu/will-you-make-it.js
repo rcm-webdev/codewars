@@ -20,7 +20,7 @@
 //example zeroFuel = (100, 25, 1) //false
 //pseudocode
 
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+const zeroFuel1 = (distanceToPump, mpg, fuelLeft) => {
   return mpg * fuelLeft >= distanceToPump ? true : false;
 };
 
@@ -28,4 +28,6 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 
 //Best Practices
 
-//same as above
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return distanceToPump / mpg <= fuelLeft;
+};
