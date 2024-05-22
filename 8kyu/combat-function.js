@@ -21,6 +21,11 @@ function combat(health, damage) {
   return currentHealth >= 0 ? currentHealth : 0;
 }
 
+//using a method
+function combat(health, damage) {
+  return Math.max(0, health - damage);
+}
+
 //-------------------------------------------------------------------------------------------------------------------------
 
 //Best Practices
