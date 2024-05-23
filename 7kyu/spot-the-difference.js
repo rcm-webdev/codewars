@@ -36,8 +36,11 @@ function spot(s1, s2) {
   let differences = [];
 
   // iterate through each character of string
-  for (let i = 0; i < s1.length; i++) //compare characters from s1 and s2
-  {
+  for (
+    let i = 0;
+    i < s1.length;
+    i++ //compare characters from s1 and s2
+  ) {
     if (s1[i] !== s2[i]) {
       //Add indexes to the differences array if characters differ
       differences.push(i);
