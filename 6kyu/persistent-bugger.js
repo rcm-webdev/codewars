@@ -42,6 +42,36 @@ function persistence(num) {
   return counter;
 }
 
+//repeat coding project, but without any methods
+
+function persistence(num) {
+  // Initialize counter to count the number of times we reduce the number
+  let counter = 0;
+
+  // Loop until num is a single digit
+  while (num >= 10) {
+    let product = 1;
+
+    // Multiply digits of num
+    while (num > 0) {
+      product *= num % 10;
+      num = Math.floor(num / 10);
+    }
+
+    // Update num to the product of its digits
+    num = product;
+    // Increment counter for each reduction
+    counter++;
+  }
+
+  // Return the total number of reductions
+  return counter;
+}
+
+// Example usage:
+console.log(persistence(111)); // Output: 1
+console.log(persistence(39)); // Output: 3 (39 -> 27 -> 14 -> 4)
+
 //----------------------------------------------------------------
 
 //Best Practice:
