@@ -37,4 +37,13 @@ function squareDigits(num) {
 
 //Best Practices
 
-//same as above
+function squareDigits(num) {
+  return Number(
+    ("" + num)
+      .split("")
+      .map(function (val) {
+        return val * val;
+      })
+      .join("")
+  );
+}
