@@ -33,6 +33,27 @@ function squareDigits(num) {
   );
 }
 
+//with less methods
+function squareDigits(num) {
+  let result = 0;
+  let factor = 1;
+
+  while (num > 0) {
+    let digit = num % 10; // Get the last digit
+    let squared = digit * digit; // Square the digit
+
+    // Place the squared digit in the correct position
+    result += squared * factor;
+
+    // Update the factor based on the squared digit
+    factor *= squared < 10 ? 10 : 100;
+
+    num = Math.floor(num / 10); // Remove the last digit from the number
+  }
+
+  return result;
+}
+
 //-------------------------------------------------------------------------------------------------------------------------
 
 //Best Practices
