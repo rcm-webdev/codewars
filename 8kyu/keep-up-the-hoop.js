@@ -5,29 +5,29 @@
 //-------------------------------------------------------------------------------------------------------------------------
 //Description
 
-// You are given a method called main, make it print the line Hello World!, (yes, that includes a new line character at the end) and don't return anything
+// Alex just got a new hula hoop, he loves it but feels discouraged because his little brother is better than him.
 
-// Note that for some languages, the function main is the entry point of the program.
+// Write a program where Alex can input (n) how many times the hoop goes round and it will return him an encouraging message:
 
-// Here's how it will be tested:
-
-//     Solution.main("parameter1","parameter2");
+//     If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
+//     If he doesn't get 10 hoops, return the string "Keep at it until you get it".
 
 //-------------------------------------------------------------------------------------------------------------------------
 
 //My Solution w/ PREP
 
-//parameters: no parameters
-//results: main method should print 'Hello World!'
-//example: Solution.main() //'Hello World'
+//parameters: all valid inputs. Each input is a number
+//results: a string based on the number placed
+//example: function hoopCount(25) //'Great, now move on to tricks'
 //pseudocode
 
-class Solution {
-  //define static method
-  static main() {
-    //print 'Hello World' to console
-    console.log("Hello World!");
-  }
+function hoopCount(n) {
+  //conditional
+  //if alex logs 10 or more times the hoop goes round, then return "Great, now move on to tricks"
+  //otherwise return message 'Keep at it until you get it'
+  return n >= 10
+    ? "Great, now move on to tricks"
+    : "Keep at it until you get it";
 }
 
 //-------------------------------------------------------------------------------------------------------------------------
