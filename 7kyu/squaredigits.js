@@ -67,4 +67,4 @@ function squareDigits(num) {
       })
       .join("")
   );
-}
+} 
