@@ -49,6 +49,28 @@ function checkThreeAndTwo(array) {
   );
 }
 
+//lets make this code more dry
+
+function checkThreeAndTwo(array) {
+  // Initialize an object to count occurrences of each letter
+  let counts = { a: 0, b: 0, c: 0 };
+
+  // Count occurrences of each letter
+  for (let i = 0; i < array.length; i++) {
+    counts[array[i]]++;
+  }
+
+  // Extract the values (counts) from the object
+  let values = Object.values(counts);
+
+  // Check if the array contains exactly one '3' and one '2'
+  let countOfThree = values.filter((value) => value === 3).length;
+  let countOfTwo = values.filter((value) => value === 2).length;
+
+  // Return true if there's exactly one '3' and one '2'
+  return countOfThree === 1 && countOfTwo === 1;
+}
+
 //-------------------------------------------------------------------------------------------------------------------------
 
 //Best Practices
