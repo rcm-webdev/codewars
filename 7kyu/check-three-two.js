@@ -49,7 +49,7 @@ function checkThreeAndTwo(array) {
   );
 }
 
-//lets make this code more dry
+//lets make this code more DRY
 
 function checkThreeAndTwo(array) {
   // Initialize an object to count occurrences of each letter
